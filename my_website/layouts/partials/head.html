@@ -2,9 +2,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css" integrity="sha512-ZRv40llEogRmoWgZwnsqke3HNzJ0kiI0+pcMgiz2bxO6Ew1DVBtWjVn0qjrXdT3+u+pSN36gLgmJiiQ3cQtyzA==" crossorigin="anonymous" />
-    {{ $style := resources.Get "css/main.scss" }}
+    {{ $style := resources.Get "scss/main.scss" }}
+    {{ $components := readDir "assets/scss/components" }}
+    {{ range $components }}
+        {{/* find all files under scss/components, and merges them into one included file */}}
+        {{ $component := resources.Get (printf "scss/components/%s" .Name) }}
+        {{ $style = slice $component $style | resources.Concat .Name }}
+    {{ end }}
     {{/* toCSS automatically compiles sass on the fly */}}
-    {{ $style = $style | fingerprint | toCSS | minify }}
+    {{ $style = slice $style | resources.Concat "all.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" />
     <title>{{ .Site.Title }}</title>
 </head>

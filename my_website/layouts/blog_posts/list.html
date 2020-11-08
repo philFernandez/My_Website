@@ -4,7 +4,11 @@
 {{ range where .Site.Pages "Type" "blog_posts" }}
     <a href="{{ .Permalink }}" class="navbar-item">{{ .Page.Title }}</a>
 {{ end }}
-    <p>Rendering list BLOG_POST template!</p>
+    <div>
+        <div>
+            <p>Rendering list BLOG_POST template!</p>
+        </div>
+    </div>
 {{ end }}
 
 

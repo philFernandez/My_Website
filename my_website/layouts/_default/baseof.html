@@ -12,8 +12,10 @@
                 </div>
             </div>
         </nav>
-        {{ block "content" . }}{{ end }}
-        <p>{{ . }}</p>
+        <div class="container">
+            {{ block "content" . }}{{ end }}
+            <p>{{ . }}</p>
+        </div>
     </body>
 </html>
 
