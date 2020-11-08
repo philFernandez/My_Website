@@ -1,19 +1,9 @@
 {{ define "content" }}
     <h1>{{ .Title }}</h1>
     {{ range .Params.Components }}
-        {{ if .hero }}
-            {{ partial "hero.html" }}
+        {{ range $component, $data := . }}
+            {{ partial (printf "%s.html" $component) (dict $component $data) }}
         {{ end }}
-        {{ if .grid }}
-            {{ partial "grid.html" }}
-        {{ end }}
-        {{ if .blurb }}
-            {{ partial "blurb.html" }}
-        {{ end }}
-    {{ end }}
-    <h2>Checkout Our Blog!</h2>
-    {{ range where .Site.Pages "Type" "blog_posts" }}
-        <a href="{{ .Permalink }}" class="navbar-item">{{ .Page.Title }}</a>
     {{ end }}
     <p>Rendering list template!</p>
 {{ end }}

@@ -1,1 +1,10 @@
-<h3>This is a grid</h3>
+<h3>{{ .grid.title }}</h3>
+
+<div class="columns">
+    {{ range .grid.items }}
+        <div class="column">
+            <div>{{ .title }}</div>
+            <div>{{ .desc }}</div>
+        </div>
+    {{ end }}
+</div>
