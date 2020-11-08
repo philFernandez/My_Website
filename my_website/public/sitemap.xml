@@ -3,35 +3,35 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/about/</loc>
+    <loc>https://philfernandez.live/about/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/blog_posts/</loc>
+    <loc>https://philfernandez.live/blog_posts/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://philfernandez.live/categories/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/contact/</loc>
+    <loc>https://philfernandez.live/contact/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://philfernandez.live/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/blog_posts/post1/</loc>
+    <loc>https://philfernandez.live/blog_posts/post1/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/blog_posts/post2/</loc>
+    <loc>https://philfernandez.live/blog_posts/post2/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://philfernandez.live/tags/</loc>
   </url>
   
 </urlset>
