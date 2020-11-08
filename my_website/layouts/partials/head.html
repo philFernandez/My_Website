@@ -7,9 +7,8 @@
     {{ range $components }}
         {{/* find all files under scss/components, and merges them into one included file */}}
         {{ $component := resources.Get (printf "scss/components/%s" .Name) }}
-        {{ $style = slice $component $style | resources.Concat .Name }}
+        {{ $style = slice $style $component | resources.Concat .Name }}
     {{ end }}
-    {{/* toCSS automatically compiles sass on the fly */}}
     {{ $style = slice $style | resources.Concat "all.scss" | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" />
     <title>{{ .Site.Title }}</title>
