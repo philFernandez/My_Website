@@ -1,3 +1,3 @@
-baseURL = "https://philfernandez.live/"
+baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "Phil Fernandez"
+title = "My New Hugo Site"

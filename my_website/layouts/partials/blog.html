@@ -1,5 +1,0 @@
-<h2>Checkout Our Blog!</h2>
-{{ range where site.Pages "Type" "blog_posts" }}
-    <a href="{{ .Permalink }}" class="navbar-item">{{ .Page.Title }}</a>
-{{ end }}
-

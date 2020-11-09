@@ -1,17 +1,11 @@
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {{/* import the bulma framework */}}
-    {{ $bulma := resources.Get "css/bulma.min.css" }}
-    <link rel="stylesheet" href="{{ $bulma.Permalink }}" />
     {{ $style := resources.Get "scss/main.scss" }}
-    {{ $components := readDir "assets/scss/components" }}
-    {{ range $components }}
-        {{/* find all files under scss/components, and merges them into one included file */}}
-        {{ $component := resources.Get (printf "scss/components/%s" .Name) }}
-        {{ $style = slice $style $component | resources.Concat .Name }}
-    {{ end }}
-    {{ $style = slice $style | resources.Concat "all.scss" | toCSS | minify | fingerprint }}
+    {{ $style = $style | toCSS | minify | fingerprint }}
     <link rel="stylesheet" href="{{ $style.Permalink }}" />
+    <script src="https://kit.fontawesome.com/9da51596eb.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Source+Code+Pro&display=swap" rel="stylesheet">
     <title>{{ .Site.Title }}</title>
 </head>
+
