@@ -55,5 +55,52 @@ i.fa-envelope, i.fa-phone {
 
 // Desktop/non-mobile grid settings
 @media only screen and (min-width: 768px) {
+    div.item1 > p, div.item2 > p {
+        font-size: 1.1rem;
+        padding: 14px;
+        background-color: #eee;
+        box-shadow: 5px 5px 5px lightgrey;
+        border-radius: 5px;
+    }
+
+    div.item3 > ul, div.item4 > ul {
+        font-size: 1.1rem;
+        padding: 14px 14px 14px 28px;
+        background-color: #eee;
+        box-shadow: 5px 5px 5px lightgrey;
+        border-radius: 5px;
+
+    }
+
+    .grid1-container {
+        display: grid;
+        border: 1px solid grey;
+        font-family: 'Source Code Pro', monospace;
+        //grid-auto-rows: 50px;
+        grid-template-columns: 152px 152px 152px 152px 152px 152px 152px 152px 152px 152px 152px 152px;
+        column-gap: 8px;
+    }
+
+    .item1, .item2 {
+        //border: 1px solid grey;
+        //grid-row: span 5;
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+
+    .item3 {
+        grid-row-start: 1;
+        //border: 1px solid grey;
+        grid-column-start: 6;
+        grid-column-end: 8;
+    }
+
+    .item4 {
+        grid-row-start: 2;
+        //border: 1px solid grey;
+        grid-column-start: 6;
+        grid-column-end: 8;
+    }
+
 }
 
