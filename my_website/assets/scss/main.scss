@@ -80,12 +80,13 @@ i.fa-envelope, i.fa-phone {
         grid-template-columns: 152px 152px 152px 152px 152px 152px 152px 152px 152px 152px 152px 152px;
         column-gap: 8px;
     }
+    .item1 {
+        // start row / start col / span rows / span column
+        grid-area: 1 / 2 / span 1 / span 3;
+    }
 
-    .item1, .item2 {
-        //border: 1px solid grey;
-        //grid-row: span 5;
-        grid-column-start: 2;
-        grid-column-end: 4;
+    .item2 {
+        grid-area: 2 / 2 / span 2 / span 3;
     }
 
     .item3 {
