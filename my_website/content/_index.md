@@ -4,7 +4,6 @@ summary: Focused and quick-learning undergraduate seeking to transition from edu
 subtitle: pfernandez@csus.edu
 subtitle2: 209-327-8319
 date: 2020-11-08T13:46:48-08:00
-draft: true
 ---
 
 This is some cool stuff
