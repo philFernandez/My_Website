@@ -5,3 +5,16 @@ h1 {
     color: $color-lightest;
     font-size: 4rem;
 }
+
+a.is-primary, a.is-success {
+    color: black !important;
+}
+
+a.is-link {
+    color: orange !important;
+}
+
+a.is-info {
+    color: green !important;
+}
+

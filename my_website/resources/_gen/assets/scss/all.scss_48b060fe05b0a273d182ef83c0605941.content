@@ -1,1 +1,1 @@
-body{background-color:#a5ccdf}p{background-color:#fac87f}a{color:red!important}h1{color:#fff;font-size:4rem}
+body{background-color:#a5ccdf}p{background-color:#fac87f}h1{color:#fff;font-size:4rem}a.is-primary,a.is-success{color:#000!important}a.is-link{color:orange!important}a.is-info{color:green!important}
