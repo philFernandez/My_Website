@@ -27,7 +27,7 @@ div.header {
 
 div.header > div {
     display: inline-block;
-    text-align: left;
+    //text-align: left;
 }
 
 // Email and phone number
@@ -47,7 +47,8 @@ a {
 // My Name
 div.header > div > h1 {
     margin: 18px 0 0 0;
-    font-size: 5rem;
+    font-size: 3.5rem;
+    text-shadow: 1px 1px 1px grey;
 }
 
 // icons next to email and phone
@@ -64,7 +65,7 @@ div.wrapper {
 // Each column
 div.main {
     width: 20%;
-    margin: 5% 24px;
+    margin: 12px 24px;
     //border: 1px solid black;
     display: inline-block;
     vertical-align: top;
@@ -74,6 +75,7 @@ div.main {
 // Header over cards
 div.main > h1 {
     margin: 0;
+    text-shadow: 1px 1px 3px grey;
     font-family: $secondary-font;
     color: black;
     font-size: 1.3rem;
@@ -82,7 +84,7 @@ div.main > h1 {
 div.card {
     background-color: #eee;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px salmon;
+    box-shadow: 1px 1px 1px 1px grey;
     margin-bottom: 32px;
 }
 
