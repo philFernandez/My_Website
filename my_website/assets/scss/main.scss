@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    background-color: $bg-color3;
+    background-color: $bg-color4;
 }
 
 h1 {
@@ -39,41 +39,53 @@ div.header > div > p {
     font-size: 1.2rem;
 }
 
+// Email link
 a {
     text-decoration: none;
 }
 
+// My Name
 div.header > div > h1 {
     margin: 18px 0 0 0;
     font-size: 5rem;
 }
 
+// icons next to email and phone
 i {
     margin-right: 8px;
 }
 
+// Container that holds the three main columns
 div.wrapper {
     margin: 0 auto;
     text-align: center;
 }
 
+// Each column
 div.main {
     width: 20%;
     margin: 5% 24px;
-    border: 1px solid black;
+    //border: 1px solid black;
     display: inline-block;
     vertical-align: top;
     text-align: left;
 }
 
+// Header over cards
 div.main > h1 {
     margin: 0;
+    font-family: $secondary-font;
+    color: black;
 }
 
 div.card {
     background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px salmon;
+    margin-bottom: 32px;
 }
 
+// Text inside card
 div.card > p {
     margin: 0 auto 14px auto;
     padding: 14px;
