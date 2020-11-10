@@ -3,23 +3,15 @@ $secondary-color: #000000;
 
 html {
     color: black;
+    font-family: 'Oswald', sans-serif;
 }
 
 body {
     background-color: $bg-color;
 }
 
-
-.fred {
-    color: purple;
-}
-
 h1 {
-    color: green;
-}
-
-h1:visited {
-    color: pink;
+    color: darkgray;
 }
 
 div.header {
@@ -31,9 +23,22 @@ div.header > div {
     text-align: left;
 }
 
-div.header > div > h1,
+// Email and phone number
+div.header > div > a > p,
 div.header > div > p {
     margin: 0;
+    color: black;
+}
+a {
+    text-decoration: none;
+}
+
+div.header > div > h1 {
+    margin: 18px 0 0 0;
+}
+
+i {
+    margin-right: 8px;
 }
 
 div.wrapper {
@@ -62,7 +67,6 @@ div.card > p {
     margin: 0 auto 14px auto;
     padding: 14px;
     font-size: 1.5rem;
-    font-family: sans-serif;
 }
 
 
