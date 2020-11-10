@@ -1,8 +1,11 @@
 {{ define "main" }}
         <div class="header">
             <div>
-                <h1>Phil Fernandez</h1>
-                <p>pfernandez@csus.edu</p>
+                <h1>{{ .Params.Title }}</h1>
+                <a href="mailto:{{ .Params.Subtitle }}">
+                    <p><i class="fas fa-envelope"></i>{{ .Params.Subtitle }}</p>
+                </a>
+                <p><i class="fas fa-phone"></i>{{ .Params.Subtitle2 }}</p>
             </div>
         </div>
 
