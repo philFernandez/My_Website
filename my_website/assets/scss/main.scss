@@ -1,17 +1,24 @@
-$bg-color: #e0e0e0;
+$bg-color1: #e0e0e0;
+$bg-color2: lightslategrey;
+$bg-color3: indigo;
+$bg-color4: mintcream;
+$bg-color5: oldlace;
 $secondary-color: #000000;
+$h1color: coral;
+$main-font: 'Oswald', sans-serif;
+$secondary-font: 'Source Code Pro', monospace;
 
 html {
     color: black;
-    font-family: 'Oswald', sans-serif;
+    font-family: $main-font;
 }
 
 body {
-    background-color: $bg-color;
+    background-color: $bg-color3;
 }
 
 h1 {
-    color: darkgray;
+    color: $h1color;
 }
 
 div.header {
@@ -26,15 +33,19 @@ div.header > div {
 // Email and phone number
 div.header > div > a > p,
 div.header > div > p {
-    margin: 0;
+    margin: 8px;
     color: black;
+    font-family: $secondary-font;
+    font-size: 1.2rem;
 }
+
 a {
     text-decoration: none;
 }
 
 div.header > div > h1 {
     margin: 18px 0 0 0;
+    font-size: 5rem;
 }
 
 i {
