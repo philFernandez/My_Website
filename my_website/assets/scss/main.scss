@@ -76,6 +76,7 @@ div.main > h1 {
     margin: 0;
     font-family: $secondary-font;
     color: black;
+    font-size: 1.3rem;
 }
 
 div.card {
@@ -85,11 +86,21 @@ div.card {
     margin-bottom: 32px;
 }
 
+// Text and lists inside card
+div.card > p,
+div.card > ul {
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
 // Text inside card
 div.card > p {
-    margin: 0 auto 14px auto;
     padding: 14px;
-    font-size: 1.5rem;
+}
+
+div.card > ul {
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 
 
