@@ -105,6 +105,14 @@ div.card > ul {
     padding-bottom: 14px;
 }
 
+li > a {
+    color: darkcyan;
+}
+
+li > a:hover {
+    text-shadow: 1px 1px 1px darkcyan;
+}
+
 
 
 @media only screen and (max-width: 1000px) {
